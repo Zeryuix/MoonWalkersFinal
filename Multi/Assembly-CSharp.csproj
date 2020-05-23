@@ -56,9 +56,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Appear.cs" />
-     <Compile Include="Assets\Asteroid.cs" />
+     <Compile Include="Assets\Asteroids.cs" />
+     <Compile Include="Assets\CollisionAnimation.cs" />
+     <Compile Include="Assets\CollisionFusee.cs" />
+     <Compile Include="Assets\DepassementFifthSpawn.cs" />
+     <Compile Include="Assets\DepassementFirstSpawn.cs" />
+     <Compile Include="Assets\DepassementFourthSpawn.cs" />
+     <Compile Include="Assets\DepassementSecondSpawn.cs" />
+     <Compile Include="Assets\DepassementSixthSpawn.cs" />
+     <Compile Include="Assets\DepassementThirdSpawn.cs" />
      <Compile Include="Assets\DeployAsteroids.cs" />
+     <Compile Include="Assets\DespawnAsteroid.cs" />
      <Compile Include="Assets\LapComplete.cs" />
      <Compile Include="Assets\LapTimeManager.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
@@ -101,6 +109,7 @@
      <Compile Include="Assets\LeanTweenPingPongUI.cs" />
      <Compile Include="Assets\LeanTweenPopUp.cs" />
      <Compile Include="Assets\LeanTweenPopUp2.cs" />
+     <Compile Include="Assets\LeanTweenRotateAsteroids.cs" />
      <Compile Include="Assets\LeanTweenRotateUI.cs" />
      <Compile Include="Assets\LeanTweenScaleUI.cs" />
      <Compile Include="Assets\LeanTweenScaleUI2.cs" />
@@ -123,6 +132,7 @@
      <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
      <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
      <Compile Include="Assets\PlayerWaiting.cs" />
+     <Compile Include="Assets\Progression.cs" />
      <Compile Include="Assets\Scripts\Launcher.cs" />
      <Compile Include="Assets\Scripts\Look.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
@@ -130,6 +140,7 @@
      <Compile Include="Assets\SettingsMenu.cs" />
      <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
      <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
+     <Compile Include="Assets\TestDeployAsteroid.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

@@ -7,7 +7,7 @@ namespace Com.MoonDevs.MoonWalkers
 {
     public class Motion : MonoBehaviourPunCallbacks
     {
-        public float speed;
+        public static float speed = 1000;
         public float sprintModifier;
         public float jumpForce;
         public Camera normalCam;
@@ -16,10 +16,12 @@ namespace Com.MoonDevs.MoonWalkers
 
         private Rigidbody rig;
 
-        public float forwardForce = 2000f;
+        public static float forwardForce = 1000f;
         public float sidewaysForce = 500f;
         public float maxspeed = 2000f;
         public float turnSpeed = 50f;
+        public static float mult = 0.01f;
+        public static float maxMult = 1;
 
         private float baseFOV;
         private float sprintFOVModifier = 1.5f;
@@ -39,7 +41,11 @@ namespace Com.MoonDevs.MoonWalkers
         }
 
         private void Update()
-		{
+        {
+            if (mult < maxMult)
+            {
+                mult += 0.00002f;
+            }
             if (!photonView.IsMine) return;
 
             //Axles
@@ -69,24 +75,24 @@ namespace Com.MoonDevs.MoonWalkers
 
             if (rig.velocity.magnitude <maxspeed)
             {
-                rig.AddForce(0, 0, forwardForce * Time.deltaTime);
+                rig.AddForce(0, 0, forwardForce * mult);
             }
 
             if (Input.GetKey("d"))
             {
-                rig.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+                rig.AddForce(sidewaysForce * mult, 0, 0);
                 //transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
             }
 
             if (Input.GetKey("a"))
             {
-                rig.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+                rig.AddForce(-sidewaysForce * mult, 0, 0);
                 //transform.Rotate(Vector3.up, -turnSpeed * Time.deltaTime);
             }
 
             if (Input.GetKey("s"))
             {
-                rig.AddForce(0, 0, -(forwardForce / 2) * Time.deltaTime);
+                rig.AddForce(0, 0, -(forwardForce / 2) * mult);
             }
 
             //Axles
@@ -124,11 +130,11 @@ namespace Com.MoonDevs.MoonWalkers
             //Field of View
             if (isSprinting)
             {
-                normalCam.fieldOfView = Mathf.Lerp(normalCam.fieldOfView,baseFOV * sprintFOVModifier,Time.deltaTime * 8f);
+                normalCam.fieldOfView = Mathf.Lerp(normalCam.fieldOfView,baseFOV * sprintFOVModifier,mult * 8f);
             }
             else
             {
-                normalCam.fieldOfView = Mathf.Lerp(normalCam.fieldOfView,baseFOV,Time.deltaTime * 8f);
+                normalCam.fieldOfView = Mathf.Lerp(normalCam.fieldOfView,baseFOV,mult * 8f);
             }
             
         }

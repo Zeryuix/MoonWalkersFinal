@@ -14,31 +14,35 @@ public class LapComplete : MonoBehaviour
     public GameObject SecondDisplay;
     public GameObject MiliDisplay;
     
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
-        LapTimeManager.isFinished = true;
-        EndScreen.SetActive(true);
-        Timer.SetActive(false);
-        Look.cursorLocked = false;
+        if (other.gameObject.name != "SmallAsteroid")
+        {
+            LapTimeManager.isFinished = true;
+            EndScreen.SetActive(true);
+            Timer.SetActive(false);
+            Look.cursorLocked = false;
 
-        if (LapTimeManager.SecondCount <= 9)
-        {
-            SecondDisplay.GetComponent<Text>().text = "0" + LapTimeManager.SecondCount + ".";
-        }
-        else
-        {
-            SecondDisplay.GetComponent<Text>().text = "" + LapTimeManager.SecondCount + ".";
-        }
+            if (LapTimeManager.SecondCount <= 9)
+            {
+                SecondDisplay.GetComponent<Text>().text = "0" + LapTimeManager.SecondCount + ".";
+            }
+            else
+            {
+                SecondDisplay.GetComponent<Text>().text = "" + LapTimeManager.SecondCount + ".";
+            }
 
-        if (LapTimeManager.MinuteCount <= 9)
-        {
-            MinuteDisplay.GetComponent<Text>().text = "0" + LapTimeManager.MinuteCount + ":";
-        }
-        else
-        {
-            MinuteDisplay.GetComponent<Text>().text = "" + LapTimeManager.MinuteCount + ":";
-        }
+            if (LapTimeManager.MinuteCount <= 9)
+            {
+                MinuteDisplay.GetComponent<Text>().text = "0" + LapTimeManager.MinuteCount + ":";
+            }
+            else
+            {
+                MinuteDisplay.GetComponent<Text>().text = "" + LapTimeManager.MinuteCount + ":";
+            }
 
-        MiliDisplay.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
+            MiliDisplay.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
+            Time.timeScale = 0;
+        }
     }
 }

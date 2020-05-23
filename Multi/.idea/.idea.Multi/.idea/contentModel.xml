@@ -7,9 +7,17 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Appear.cs" t="Include" />
-        <e p="Asteroid.cs" t="Include" />
+        <e p="Asteroids.cs" t="Include" />
+        <e p="CollisionAnimation.cs" t="Include" />
+        <e p="CollisionFusee.cs" t="Include" />
+        <e p="DepassementFifthSpawn.cs" t="Include" />
+        <e p="DepassementFirstSpawn.cs" t="Include" />
+        <e p="DepassementFourthSpawn.cs" t="Include" />
+        <e p="DepassementSecondSpawn.cs" t="Include" />
+        <e p="DepassementSixthSpawn.cs" t="Include" />
+        <e p="DepassementThirdSpawn.cs" t="Include" />
         <e p="DeployAsteroids.cs" t="Include" />
+        <e p="DespawnAsteroid.cs" t="Include" />
         <e p="LapComplete.cs" t="Include" />
         <e p="LapTimeManager.cs" t="Include" />
         <e p="LeanTween" t="Include">
@@ -68,6 +76,7 @@
         <e p="LeanTweenPingPongUI.cs" t="Include" />
         <e p="LeanTweenPopUp.cs" t="Include" />
         <e p="LeanTweenPopUp2.cs" t="Include" />
+        <e p="LeanTweenRotateAsteroids.cs" t="Include" />
         <e p="LeanTweenRotateUI.cs" t="Include" />
         <e p="LeanTweenScaleUI.cs" t="Include" />
         <e p="LeanTweenScaleUI2.cs" t="Include" />
@@ -423,6 +432,7 @@
           </e>
         </e>
         <e p="PlayerWaiting.cs" t="Include" />
+        <e p="Progression.cs" t="Include" />
         <e p="Real Stars Skybox" t="Include">
           <e p="Demo Scene" t="Include">
             <e p="Documentation.txt" t="Include" />
@@ -443,6 +453,7 @@
             </e>
           </e>
         </e>
+        <e p="TestDeployAsteroid.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
             <e p="Fonts" t="Include">

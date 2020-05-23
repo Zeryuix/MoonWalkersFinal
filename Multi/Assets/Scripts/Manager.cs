@@ -14,6 +14,7 @@ namespace Com.MoonDevs.MoonWalkers
     {
         public string player_prefab;
         public Transform spawn_point;
+        public static GameObject instantiatedPlayer;
 
         private void Start()
 		{
@@ -22,7 +23,7 @@ namespace Com.MoonDevs.MoonWalkers
 
         public void Spawn()
 		{
-            PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
+            instantiatedPlayer = PhotonNetwork.Instantiate(player_prefab, spawn_point.position, spawn_point.rotation);
 		}
     }
 }

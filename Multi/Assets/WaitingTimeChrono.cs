@@ -12,8 +12,8 @@ public class WaitingTimeChrono : MonoBehaviour
     public GameObject Chrono;
     public GameObject SecondBox;
     public GameObject Timer;
-
-    public static int startTimer = 10;
+    
+    public static int startTimer = 3;
     public static bool DecountDis = false;
     public static bool TimerDis = false;
     

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a97253917aedd1d4ebd0db3ade1dbd6d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DepSpawn1: {instanceID: 0}
+  - DepSpawn2: {instanceID: 0}
+  - DepSpawn3: {instanceID: 0}
+  - DepSpawn4: {instanceID: 0}
+  - DepSpawn5: {instanceID: 0}
+  - DepSpawn6: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

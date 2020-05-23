@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 9084610684558698773}
   - component: {fileID: 5672363533875169016}
   - component: {fileID: 7767444349239858203}
+  - component: {fileID: 3823472514038207828}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -190,12 +191,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a66c4971656c48b7bbc68361e214524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
   sprintModifier: 2
   jumpForce: 50
   normalCam: {fileID: 9084610686430755953}
   cameraParent: {fileID: 5970327793056430050}
-  forwardForce: 1000
   sidewaysForce: 1000
   maxspeed: 2000
   turnSpeed: 50
@@ -254,6 +253,19 @@ MonoBehaviour:
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
+--- !u!114 &3823472514038207828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9084610684558698778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36196f81a7a977e40910290228ccd27c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fusee: {fileID: 9084610684558698778}
 --- !u!1 &9084610686430755954
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +364,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 4095896311757839685, guid: 356c6cadabae73b4bbd6ba55d51a322b,
     type: 3}
+  firstSpawn: {fileID: 0}
+  secondSpawn: {fileID: 0}
+  thirdSpawn: {fileID: 0}
+  fourthSpawn: {fileID: 0}
+  fifthSpawn: {fileID: 0}
+  sixthSpawn: {fileID: 0}
+  lastSpawn: {fileID: 0}
   respawnTime: 1
+  dist: 0
 --- !u!1001 &881568710325177803
 PrefabInstance:
   m_ObjectHideFlags: 0
