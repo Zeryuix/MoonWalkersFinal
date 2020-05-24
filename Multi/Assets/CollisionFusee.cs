@@ -21,13 +21,6 @@ public class CollisionFusee : MonoBehaviour
         {
             crashed = true;
             fusee.transform.position = spawn;
-            Motion.mult = 0.01f;
         }
-    }
-
-    private void Update()
-    {
-        if (crashed)
-            crashed = false;
     }
 }

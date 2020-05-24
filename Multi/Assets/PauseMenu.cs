@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public static bool GameSettings = false;
+    public static bool backToMenu = false;
 
     public GameObject pauseMenuUI, settingsMenuUI, TimerUI, WaitingPlayersUI, DecountUI;
 
@@ -66,7 +67,8 @@ public class PauseMenu : MonoBehaviour
     
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
+        backToMenu = true;
     }
 
     public void QuitGame()

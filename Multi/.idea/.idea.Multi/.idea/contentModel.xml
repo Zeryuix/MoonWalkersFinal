@@ -17,9 +17,11 @@
         <e p="DepassementSixthSpawn.cs" t="Include" />
         <e p="DepassementThirdSpawn.cs" t="Include" />
         <e p="DeployAsteroids.cs" t="Include" />
+        <e p="DeployASteroidsSolo.cs" t="Include" />
         <e p="DespawnAsteroid.cs" t="Include" />
         <e p="LapComplete.cs" t="Include" />
         <e p="LapTimeManager.cs" t="Include" />
+        <e p="LapTimeManagerSolo.cs" t="Include" />
         <e p="LeanTween" t="Include">
           <e p="Editor" t="Include">
             <e p="LeanTweenDocumentationEditor.cs" t="Include" />
@@ -84,9 +86,12 @@
         <e p="LevelLoader.cs" t="Include" />
         <e p="LevelLoaderScript.cs" t="Include" />
         <e p="LigneDepart.cs" t="Include" />
+        <e p="LigneDepartSolo.cs" t="Include" />
         <e p="MainMenu.cs" t="Include" />
+        <e p="ManagerSolo.cs" t="Include" />
         <e p="MeteoriteFall.cs" t="Include" />
         <e p="PauseMenu.cs" t="Include" />
+        <e p="PauseMenuSolo.cs" t="Include" />
         <e p="Photon" t="Include">
           <e p="PhotonChat" t="Include">
             <e p="Code" t="Include">
@@ -433,13 +438,16 @@
         </e>
         <e p="PlayerWaiting.cs" t="Include" />
         <e p="Progression.cs" t="Include" />
+        <e p="ProgressionSolo.cs" t="Include" />
         <e p="Real Stars Skybox" t="Include">
           <e p="Demo Scene" t="Include">
             <e p="Documentation.txt" t="Include" />
           </e>
         </e>
+        <e p="RotateBoxSpeed.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Launcher.cs" t="Include" />
+          <e p="LauncherSolo.cs" t="Include" />
           <e p="Look.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
           <e p="Motion.cs" t="Include" />
@@ -453,6 +461,7 @@
             </e>
           </e>
         </e>
+        <e p="SpeedBoost.cs" t="Include" />
         <e p="TestDeployAsteroid.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
@@ -525,6 +534,7 @@
           </e>
         </e>
         <e p="WaitingTimeChrono.cs" t="Include" />
+        <e p="WaitingTimeSolo.cs" t="Include" />
       </e>
       <e p="Multi.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

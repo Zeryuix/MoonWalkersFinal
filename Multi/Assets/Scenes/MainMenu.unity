@@ -655,6 +655,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203652862}
   m_CullTransparentMesh: 0
+--- !u!1 &279143601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 460526307896622298, guid: 3f24da01b9553f14894b228882101c54,
+    type: 3}
+  m_PrefabInstance: {fileID: 1401333830189374874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &283955509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2083,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 799709398}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 840310140}
+        m_MethodName: LoadSolo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &799709398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2409,6 +2426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioMixerMenu: {fileID: 24100000, guid: 338e96012ac22d040bada36ce9325222, type: 2}
+  transition: {fileID: 279143601}
 --- !u!114 &840310140
 MonoBehaviour:
   m_ObjectHideFlags: 0

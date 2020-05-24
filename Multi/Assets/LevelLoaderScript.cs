@@ -17,6 +17,11 @@ public class LevelLoaderScript : MonoBehaviour
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
+
+    public void LoadSolo()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 3));
+    }
     
     public void LoadG()
     {
@@ -30,10 +35,13 @@ public class LevelLoaderScript : MonoBehaviour
 
     private void Update()
     {
-        if (Launcher.hasJoined)
+        if (Launcher.hasJoined || LauncherSolo.hasJoined)
         {
             LoadG();
-            Launcher.hasJoined = false;
+            if (Launcher.hasJoined)
+                Launcher.hasJoined = false;
+            if (LauncherSolo.hasJoined)
+                LauncherSolo.hasJoined = false;
         }
     }
     

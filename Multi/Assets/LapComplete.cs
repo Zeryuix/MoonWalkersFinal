@@ -18,30 +18,30 @@ public class LapComplete : MonoBehaviour
     {
         if (other.gameObject.name != "SmallAsteroid")
         {
-            LapTimeManager.isFinished = true;
+            LapTimeManagerSolo.isFinished = true;
             EndScreen.SetActive(true);
             Timer.SetActive(false);
             Look.cursorLocked = false;
 
-            if (LapTimeManager.SecondCount <= 9)
+            if (LapTimeManagerSolo.SecondCount <= 9)
             {
-                SecondDisplay.GetComponent<Text>().text = "0" + LapTimeManager.SecondCount + ".";
+                SecondDisplay.GetComponent<Text>().text = "0" + LapTimeManagerSolo.SecondCount + ".";
             }
             else
             {
-                SecondDisplay.GetComponent<Text>().text = "" + LapTimeManager.SecondCount + ".";
+                SecondDisplay.GetComponent<Text>().text = "" + LapTimeManagerSolo.SecondCount + ".";
             }
 
-            if (LapTimeManager.MinuteCount <= 9)
+            if (LapTimeManagerSolo.MinuteCount <= 9)
             {
-                MinuteDisplay.GetComponent<Text>().text = "0" + LapTimeManager.MinuteCount + ":";
+                MinuteDisplay.GetComponent<Text>().text = "0" + LapTimeManagerSolo.MinuteCount + ":";
             }
             else
             {
-                MinuteDisplay.GetComponent<Text>().text = "" + LapTimeManager.MinuteCount + ":";
+                MinuteDisplay.GetComponent<Text>().text = "" + LapTimeManagerSolo.MinuteCount + ":";
             }
 
-            MiliDisplay.GetComponent<Text>().text = "" + LapTimeManager.MilliCount;
+            MiliDisplay.GetComponent<Text>().text = "" + LapTimeManagerSolo.MilliCount;
             Time.timeScale = 0;
         }
     }

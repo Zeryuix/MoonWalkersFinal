@@ -46,6 +46,16 @@ namespace Com.MoonDevs.MoonWalkers
             {
                 mult += 0.00002f;
             }
+
+            if (CollisionFusee.crashed)
+            {
+                mult = 0.01f;
+                rig.velocity = Vector3.zero;
+                rig.angularVelocity = Vector3.zero;
+                rig.Sleep();
+                CollisionFusee.crashed = false;
+            }
+            
             if (!photonView.IsMine) return;
 
             //Axles

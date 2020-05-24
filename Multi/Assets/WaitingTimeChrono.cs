@@ -22,7 +22,8 @@ public class WaitingTimeChrono : MonoBehaviour
     {
         if (PhotonNetwork.CurrentRoom.PlayerCount == 4)
         {
-            DecountDis = true;
+            if (!TimerDis)
+                DecountDis = true;
             MilliCount += Time.deltaTime * 10;
             if (MilliCount >= 10)
             {

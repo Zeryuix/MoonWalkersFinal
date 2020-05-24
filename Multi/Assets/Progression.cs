@@ -21,7 +21,6 @@ public class Progression : MonoBehaviour
         {
             Count = (int) (Manager.instantiatedPlayer.transform.position.z / mapSize * 100);
             Box.GetComponent<Text>().text = Count + " %";
-            Debug.Log(Manager.instantiatedPlayer.transform.position.z);
         }
     }
 }
