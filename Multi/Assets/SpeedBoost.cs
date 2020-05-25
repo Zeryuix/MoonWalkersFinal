@@ -11,19 +11,38 @@ public class SpeedBoost : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)")
+        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)" || other.gameObject.name == "PlayerSolo" || other.gameObject.name == "PlayerSolo(Clone)")
         {
-            Destroy(this.gameObject);
-            if (Motion.mult == Motion.maxMult)
+            if (ManagerSoloGame.isSolo)
             {
-                Motion.maxMult += 0.05f;
+                Destroy(this.gameObject);
+                if (MotionSolo.mult == MotionSolo.maxMult)
+                {
+                    MotionSolo.maxMult += 0.05f;
+                }
+                else
+                {
+                    MotionSolo.mult += 0.1f;
+                    if (MotionSolo.mult > MotionSolo.maxMult)
+                    {
+                        MotionSolo.mult = MotionSolo.maxMult;
+                    }
+                }
             }
             else
             {
-                Motion.mult += 0.1f;
-                if (Motion.mult > Motion.maxMult)
+                Destroy(this.gameObject);
+                if (Motion.mult == Motion.maxMult)
                 {
-                    Motion.mult = Motion.maxMult;
+                    Motion.maxMult += 0.05f;
+                }
+                else
+                {
+                    Motion.mult += 0.1f;
+                    if (Motion.mult > Motion.maxMult)
+                    {
+                        Motion.mult = Motion.maxMult;
+                    }
                 }
             }
         }

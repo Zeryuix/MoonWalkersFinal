@@ -7,10 +7,13 @@ public class DepassementSixthSpawn : MonoBehaviour
     public static bool LastSpawn = false;
     public GameObject thisSpawn;
         
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-        DepassementFifthSpawn.SixthSpawn = false;
-        LastSpawn = true;
-        CollisionFusee.spawn = thisSpawn.transform.position;
+        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)")
+        {
+            DepassementFifthSpawn.SixthSpawn = false;
+            LastSpawn = true;
+            CollisionFusee.spawn = thisSpawn.transform.position;
+        }
     }
 }

@@ -16,7 +16,7 @@ public class ProgressionSolo : MonoBehaviour
     {
         if (WaitingTimeSolo.SecondCount >= WaitingTimeSolo.startTimer)
         {
-            Count = (int) (Manager.instantiatedPlayer.transform.position.z / mapSize * 100);
+            Count = (int) (ManagerSoloGame.instantiatedPlayer.transform.position.z / mapSize * 100);
             Box.GetComponent<Text>().text = Count + " %";
         }
     }

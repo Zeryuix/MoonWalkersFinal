@@ -10,6 +10,7 @@
         <e p="Asteroids.cs" t="Include" />
         <e p="CollisionAnimation.cs" t="Include" />
         <e p="CollisionFusee.cs" t="Include" />
+        <e p="CountCoins.cs" t="Include" />
         <e p="DepassementFifthSpawn.cs" t="Include" />
         <e p="DepassementFirstSpawn.cs" t="Include" />
         <e p="DepassementFourthSpawn.cs" t="Include" />
@@ -19,7 +20,10 @@
         <e p="DeployAsteroids.cs" t="Include" />
         <e p="DeployASteroidsSolo.cs" t="Include" />
         <e p="DespawnAsteroid.cs" t="Include" />
+        <e p="GetCoins.cs" t="Include" />
+        <e p="GoToMiddle.cs" t="Include" />
         <e p="LapComplete.cs" t="Include" />
+        <e p="LapCompleteSolo.cs" t="Include" />
         <e p="LapTimeManager.cs" t="Include" />
         <e p="LapTimeManagerSolo.cs" t="Include" />
         <e p="LeanTween" t="Include">
@@ -74,6 +78,7 @@
         <e p="LeanTweenAdjust.cs" t="Include" />
         <e p="LeanTweenButtons.cs" t="Include" />
         <e p="LeanTweenButtons2.cs" t="Include" />
+        <e p="LeanTweenMoveRight.cs" t="Include" />
         <e p="LeanTweenMoveXUI.cs" t="Include" />
         <e p="LeanTweenPingPongUI.cs" t="Include" />
         <e p="LeanTweenPopUp.cs" t="Include" />
@@ -449,8 +454,11 @@
           <e p="Launcher.cs" t="Include" />
           <e p="LauncherSolo.cs" t="Include" />
           <e p="Look.cs" t="Include" />
+          <e p="LookSolo.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
+          <e p="ManagerSoloGame.cs" t="Include" />
           <e p="Motion.cs" t="Include" />
+          <e p="MotionSolo.cs" t="Include" />
         </e>
         <e p="SettingsMenu.cs" t="Include" />
         <e p="SpaceSkies Free" t="Include">

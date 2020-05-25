@@ -12,8 +12,7 @@ namespace Com.MoonDevs.MoonWalkers
         public float jumpForce;
         public Camera normalCam;
         public GameObject cameraParent;
-
-
+        
         private Rigidbody rig;
 
         public static float forwardForce = 1000f;
@@ -50,9 +49,9 @@ namespace Com.MoonDevs.MoonWalkers
             if (CollisionFusee.crashed)
             {
                 mult = 0.01f;
-                rig.velocity = Vector3.zero;
-                rig.angularVelocity = Vector3.zero;
-                rig.Sleep();
+                //rig.velocity = Vector3.zero;
+                //rig.angularVelocity = Vector3.zero;
+                //rig.Sleep();
                 CollisionFusee.crashed = false;
             }
             

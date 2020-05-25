@@ -13,7 +13,6 @@ public class CollisionAnimation : MonoBehaviour
         {
             transition.SetBool("Crashed", true);
             LoadG();
-            CollisionFusee.crashed = false;
         }
         else
         {

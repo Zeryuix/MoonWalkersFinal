@@ -20,7 +20,12 @@ public class LevelLoaderScript : MonoBehaviour
 
     public void LoadSolo()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 3));
+        StartCoroutine(LoadLevel(3));
+    }
+
+    public void LoadShop()
+    {
+        StartCoroutine(LoadLevel(4));
     }
     
     public void LoadG()

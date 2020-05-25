@@ -59,6 +59,7 @@
      <Compile Include="Assets\Asteroids.cs" />
      <Compile Include="Assets\CollisionAnimation.cs" />
      <Compile Include="Assets\CollisionFusee.cs" />
+     <Compile Include="Assets\CountCoins.cs" />
      <Compile Include="Assets\DepassementFifthSpawn.cs" />
      <Compile Include="Assets\DepassementFirstSpawn.cs" />
      <Compile Include="Assets\DepassementFourthSpawn.cs" />
@@ -68,7 +69,10 @@
      <Compile Include="Assets\DeployAsteroids.cs" />
      <Compile Include="Assets\DeployASteroidsSolo.cs" />
      <Compile Include="Assets\DespawnAsteroid.cs" />
+     <Compile Include="Assets\GetCoins.cs" />
+     <Compile Include="Assets\GoToMiddle.cs" />
      <Compile Include="Assets\LapComplete.cs" />
+     <Compile Include="Assets\LapCompleteSolo.cs" />
      <Compile Include="Assets\LapTimeManager.cs" />
      <Compile Include="Assets\LapTimeManagerSolo.cs" />
      <Compile Include="Assets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
@@ -107,6 +111,7 @@
      <Compile Include="Assets\LeanTweenAdjust.cs" />
      <Compile Include="Assets\LeanTweenButtons.cs" />
      <Compile Include="Assets\LeanTweenButtons2.cs" />
+     <Compile Include="Assets\LeanTweenMoveRight.cs" />
      <Compile Include="Assets\LeanTweenMoveXUI.cs" />
      <Compile Include="Assets\LeanTweenPingPongUI.cs" />
      <Compile Include="Assets\LeanTweenPopUp.cs" />
@@ -143,8 +148,11 @@
      <Compile Include="Assets\Scripts\Launcher.cs" />
      <Compile Include="Assets\Scripts\LauncherSolo.cs" />
      <Compile Include="Assets\Scripts\Look.cs" />
+     <Compile Include="Assets\Scripts\LookSolo.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
+     <Compile Include="Assets\Scripts\ManagerSoloGame.cs" />
      <Compile Include="Assets\Scripts\Motion.cs" />
+     <Compile Include="Assets\Scripts\MotionSolo.cs" />
      <Compile Include="Assets\SettingsMenu.cs" />
      <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
      <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />

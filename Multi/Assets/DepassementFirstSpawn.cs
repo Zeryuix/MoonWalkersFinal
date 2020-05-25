@@ -9,10 +9,17 @@ public class DepassementFirstSpawn : MonoBehaviour
     public static bool SecondSpawn = false;
     public GameObject thisSpawn;
         
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-        FirstSpawn = false;
-        SecondSpawn = true;
-        CollisionFusee.spawn = thisSpawn.transform.position;
+        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)")
+        {
+            FirstSpawn = false;
+            SecondSpawn = true;
+            CollisionFusee.spawn = thisSpawn.transform.position;
+        }
+        else
+        {
+            Debug.Log(other.gameObject.name);
+        }
     }
 }
