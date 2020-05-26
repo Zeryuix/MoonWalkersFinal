@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class DepassementSecondSpawn : MonoBehaviour
 {
-    public static bool ThirdSpawn = false;
+    public static bool SecondSpawn = false;
     public GameObject thisSpawn;
         
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)")
+        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)" || other.gameObject.name == "PlayerSolo(Clone)" || other.gameObject.name == "PlayerSolo")
         {
-            DepassementFirstSpawn.SecondSpawn = false;
-            ThirdSpawn = true;
+            DepassementFirstSpawn.FirstSpawn = false;
+            SecondSpawn = true;
             CollisionFusee.spawn = thisSpawn.transform.position;
+            Destroy(this.gameObject);
         }
     }
 }

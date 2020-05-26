@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Motion = Com.MoonDevs.MoonWalkers.Motion;
+﻿using UnityEngine;
 
 public class CollisionFusee : MonoBehaviour
 {

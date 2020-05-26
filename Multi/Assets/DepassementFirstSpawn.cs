@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class DepassementFirstSpawn : MonoBehaviour
@@ -11,15 +12,12 @@ public class DepassementFirstSpawn : MonoBehaviour
         
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)")
+        if (other.gameObject.name == "Player" || other.gameObject.name == "Player(Clone)" || other.gameObject.name == "PlayerSolo(Clone)" || other.gameObject.name == "PlayerSolo")
         {
             FirstSpawn = false;
             SecondSpawn = true;
             CollisionFusee.spawn = thisSpawn.transform.position;
-        }
-        else
-        {
-            Debug.Log(other.gameObject.name);
+            Destroy(this.gameObject);
         }
     }
 }

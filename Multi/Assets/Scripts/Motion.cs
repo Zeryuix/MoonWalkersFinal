@@ -41,20 +41,6 @@ namespace Com.MoonDevs.MoonWalkers
 
         private void Update()
         {
-            if (mult < maxMult)
-            {
-                mult += 0.00002f;
-            }
-
-            if (CollisionFusee.crashed)
-            {
-                mult = 0.01f;
-                //rig.velocity = Vector3.zero;
-                //rig.angularVelocity = Vector3.zero;
-                //rig.Sleep();
-                CollisionFusee.crashed = false;
-            }
-            
             if (!photonView.IsMine) return;
 
             //Axles
@@ -82,6 +68,20 @@ namespace Com.MoonDevs.MoonWalkers
         {
             if (!photonView.IsMine) return;
 
+            if (mult < maxMult)
+            {
+                mult += 0.00002f;
+            }
+
+            if (CollisionFusee.crashed)
+            {
+                mult = 0.01f;
+                //rig.velocity = Vector3.zero;
+                //rig.angularVelocity = Vector3.zero;
+                //rig.Sleep();
+                CollisionFusee.crashed = false;
+            }
+            
             if (rig.velocity.magnitude <maxspeed)
             {
                 rig.AddForce(0, 0, forwardForce * mult);
